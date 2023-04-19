@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
     ]
   })
   .then((product_routes_res) => res.json(product_routes_res))
-  .catch((err) => console.log(err));
+  .catch((err) => res.status(400).json(err));
 });
 
 // get one product
@@ -37,7 +37,7 @@ router.get('/:id', (req, res) => {
     ]
   })
   .then((product_routes_res) => res.json(product_routes_res))
-  .catch((err) => console.log(err));
+  .catch((err) => res.status(400).json(err));
 });
 
 // create new product
@@ -122,7 +122,7 @@ router.delete('/:id', (req, res) => {
     }
   })
   .then((product_routes_res) => res.json(product_routes_res))
-  .catch((err) => console.log(err));
+  .catch((err) => res.status(400).json(err));
 });
 
 module.exports = router;

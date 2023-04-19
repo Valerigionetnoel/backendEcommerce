@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
     include: [Product],
   })
   .then((category_res) => res.json(category_res))
-  .catch((err) => console.log(err));
+  .catch((err) => res.status(400).json(err));
 });
 
 router.get('/:id', (req, res) => {
@@ -23,7 +23,7 @@ router.get('/:id', (req, res) => {
     include: [Product],
   })
   .then((category_res) => res.json(category_res))
-  .catch((err) => console.log(err));
+  .catch((err) => res.status(400).json(err));
 });
 
 router.post('/', (req, res) => {
