@@ -14,7 +14,7 @@ To run this application, you must first run npm install in your terminal. Then y
 
 To use this application, simply open Insomnia after the installation is complete, and check the different routes like http://localhost:3001/api/tags, http://localhost:3001/api/categories or http://localhost:3001/api/products
 
-Here is a link to a video showing the application in action. [Video]()
+Here is a link to a video showing the application in action. [Video](https://drive.google.com/file/d/1IrP1dJ2EdxhuWqIutf0dze1o7WNe9ucx/view)
 
 ## Credits
 
